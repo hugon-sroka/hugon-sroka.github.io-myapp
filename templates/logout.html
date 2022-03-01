@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <h2>You have been logged out</h2>
+    <div class ="content-section">
+        <p class = "text-left">
+            Wanna come back?
+        </p>
+            <div class ="form-group">
+                <button class="btn btn-outline-info" type="sumit">Log in</button>
+            </div>
+        </form>
+        <div class ="border-top pt-3">
+            <small class ="text-muted">
+                Already Have an Account? <a class='ml-2' href="{ url 'login' }">Sign In</a>
+            </small>
+        </div>
+    </div>
+{% endblock content %}
