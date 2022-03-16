@@ -17,6 +17,7 @@ def register(request):
         form = UserRegisterForm()
     return render(request, 'register.html', {'form': form})
 
+
 @login_required
 def profile(request):
     if request.method == 'POST':
@@ -31,6 +32,7 @@ def profile(request):
     else:
         u_form = UserUpdateForm(instance=request.user)
         p_form = ProfileUpdateForm(instance=request.user.profile)
+
 
 
     context = {
